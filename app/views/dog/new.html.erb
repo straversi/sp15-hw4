@@ -1,0 +1,6 @@
+<h1>Give Birth to a Dog</h1>
+<%= form_for @dog do |d| %> <!-- Create form for user object -->
+  Name: <%= d.text_field :name %> <!-- Create a text field that sends its value under the key name-->
+  Age: <%= d.text_field :age %><!-- Create a text field that sends its value under the key email -->
+  <%= d.submit %> <!-- Create submit button-->
+<% end %>
